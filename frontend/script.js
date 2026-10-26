@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://connect-social-media-api.onrender.com/api';
 let isLoginMode = true;
 
 document.addEventListener('DOMContentLoaded', () => {
