@@ -1,0 +1,35 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { background-color: #f0f2f5; color: #333; }
+.navbar { background-color: #fff; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+.navbar h1 { color: #1877f2; font-size: 24px; }
+#welcome-msg { margin-right: 15px; font-weight: bold; }
+.btn-logout { background-color: #e4e6eb; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+.btn-logout:hover { background-color: #d8dadf; }
+.auth-container { display: flex; justify-content: center; align-items: center; height: 80vh; }
+.auth-box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 350px; text-align: center; }
+.auth-box h2 { margin-bottom: 20px; color: #1877f2; }
+.auth-box input { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px; }
+.auth-box button { width: 100%; padding: 12px; background-color: #1877f2; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; font-weight: bold; }
+.auth-box button:hover { background-color: #166fe5; }
+.toggle-text { margin-top: 15px; font-size: 14px; color: #1877f2; cursor: pointer; }
+.main-container { max-width: 600px; margin: 20px auto; padding: 0 15px; }
+.create-post { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+.create-post textarea { width: 100%; height: 80px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; resize: none; margin-bottom: 10px; font-size: 15px; }
+.create-post button { background-color: #1877f2; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; float: right; }
+.create-post button:hover { background-color: #166fe5; }
+.post-card { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+.post-header { display: flex; align-items: center; margin-bottom: 10px; }
+.post-header .avatar { width: 40px; height: 40px; background-color: #1877f2; color: white; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-weight: bold; margin-right: 10px; }
+.post-header .author-name { font-weight: bold; font-size: 16px; }
+.post-content { font-size: 15px; margin-bottom: 10px; line-height: 1.5; }
+.post-image { width: 100%; border-radius: 8px; margin-bottom: 10px; object-fit: cover; max-height: 400px; }
+.post-actions { display: flex; gap: 20px; border-top: 1px solid #eee; padding-top: 10px; }
+.post-actions button { background: none; border: none; color: #65676b; cursor: pointer; font-weight: bold; font-size: 15px; }
+.post-actions button:hover { color: #1877f2; }
+.comment-section { margin-top: 10px; display: none; }
+.comment-input-box { display: flex; gap: 10px; margin-bottom: 10px; }
+.comment-input-box input { flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 20px; outline: none; }
+.comment-input-box button { background: #1877f2; color: white; border: none; padding: 8px 15px; border-radius: 20px; cursor: pointer; }
+.comment-list { max-height: 150px; overflow-y: auto; }
+.comment-item { background: #f0f2f5; padding: 8px 12px; border-radius: 15px; margin-bottom: 5px; font-size: 14px; }
+.comment-item strong { color: #1877f2; margin-right: 5px; }

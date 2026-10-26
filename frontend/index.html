@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect - Social Media App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Connect</h1>
+        <div id="user-info" style="display: none; align-items: center;">
+            <span style="font-size: 22px; cursor: pointer; margin-right: 15px;" onclick="openCamera()" title="Change Profile Pic">📷</span>
+            <img id="nav-profile-pic" src="" style="width: 35px; height: 35px; border-radius: 50%; object-fit: cover; margin-right: 10px; cursor: pointer; border: 2px solid #1877f2;" onclick="showProfile()">
+            <span id="welcome-msg" style="cursor:pointer; font-weight:bold; margin-right: 15px;" onclick="showProfile()"></span>
+            <button onclick="logout()" class="btn-logout">Logout</button>
+        </div>
+    </nav>
+
+    <div class="auth-container" id="auth-section">
+        <div class="auth-box">
+            <h2 id="auth-title">Login to Connect</h2>
+            <input type="text" id="name" placeholder="Full Name" style="display: none;">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="handleAuth()" id="auth-btn">Login</button>
+            <p onclick="toggleAuth()" class="toggle-text">
+                <span id="toggle-msg">Don't have an account? Register</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="main-container" id="feed-section" style="display: none;">
+        <div class="create-post">
+            <textarea id="post-text" placeholder="What's on your mind?"></textarea>
+            <input type="text" id="post-image" placeholder="Paste Image URL here (Optional)" style="width:100%; padding:10px; margin-bottom:10px; border-radius:5px; border:1px solid #ccc;">
+            <button onclick="createPost()">Post</button>
+        </div>
+        <div id="posts-feed"></div>
+    </div>
+
+    <div id="profile-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); justify-content: center; align-items: center; z-index: 1000;">
+        <div style="background: white; padding: 30px; border-radius: 10px; text-align: center; width: 320px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+            <img id="modal-profile-pic" src="" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; border: 3px solid #1877f2;">
+            <h3 id="modal-name" style="margin-bottom: 5px;"></h3>
+            <p id="modal-email" style="color: gray; margin-bottom: 20px; font-size: 14px;"></p>
+            <button onclick="closeProfile()" style="width: 100%; padding: 10px; background: #e4e6eb; color: black; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
