@@ -1,4 +1,4 @@
-const API_URL = 'https://connect-social-media-api.onrender.com/api';
+const API_URL = 'https://codealpha-socialmediaapp-zbcn.onrender.com/api';
 let isLoginMode = true;
 
 document.addEventListener('DOMContentLoaded', () => {
